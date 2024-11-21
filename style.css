@@ -1,0 +1,56 @@
+:root {
+  --textColor: #ffffff;
+  --headerColor: #2670a5;
+  --emphasisColor: lightseagreen;
+  --darkEmphasis: #252e3b;
+  --backgroundColor: #94d8ee;
+}
+
+body {
+  position: relative;
+  background-color: var(--backgroundColor);
+}
+
+h1 {
+  color: var(--headerColor);
+  text-align: center;
+}
+
+/* Navigaatio */
+.navbar {
+  background-color: var(--darkEmphasis) !important;
+}
+
+.navbar-brand,
+.navbar-text {
+  color: var(--emphasisColor) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--emphasisColor) !important;
+}
+
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+  color: var(--textColor) !important;
+}
+
+.nav-link.active {
+  color: var(--textColor) !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='lightseagreen' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: var(--emphasisColor) !important;
+}
+
+/* Lomake */
+label.muoto {
+  display: inline-block;
+  width: 6em;
+  text-align: right;
+  vertical-align: top;
+}
