@@ -3,6 +3,7 @@
   --emphasisColor: lightseagreen;
   --darkEmphasis: #0a2869;
   --backgroundColor: #01d3ff;
+  --lightBackground: #d7faf7;
 }
 
 body {
@@ -19,19 +20,32 @@ body {
 h1 {
   color: var(--emphasisColor);
   text-align: center;
+  -webkit-text-stroke: white 1px;
 }
 
-div,
-form {
+a, a:visited {
+  color: var(--emphasisColor) !important;
+}
+
+div{
   color: var(--textColor);
+  text-align: center;
 }
 
-#karuselli {
+#kuva4 {
+  border-radius: 20% 0;
+}
+
+#kuva5 {
+  border-radius: 0 20%;
+}
+
+#karuselli, #grid, #kortit, #haitari, #taulukko, #videot, #lomake {
   margin-top: 4rem;
 }
 
-/* Navigaatio */
-.navbar {
+/* Navigaatiot */
+.navbar, .nav-link.active {
   background-color: var(--darkEmphasis) !important;
 }
 
@@ -61,7 +75,22 @@ form {
   border-color: var(--emphasisColor) !important;
 }
 
+/* Kortit & haitari */
+.card-body, .accordion-body, .accordion-collapse collapse {
+  background-color: var(--lightBackground);
+  color: var(--darkEmphasis);
+}
+
+.accordion-collapse collapse show {
+  background-color: var(--darkEmphasis);
+  color: var(--emphasisColor);
+}
+
 /* Lomake */
+form {
+  text-align: left;
+}
+
 label.muoto {
   display: inline-block;
   width: 6em;

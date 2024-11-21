@@ -49,22 +49,22 @@
                 >
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#kurssi1"
                       >Sukelluksen alkeiskurssi</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#kurssi2"
                       >Sukelluksen jatkokurssi</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#kurssi3"
                       >Rikastetun ilman sukelluskurssi</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#kurssi4"
                       >Sukelluksen kertauskurssi</a
                     >
                   </li>
@@ -166,12 +166,7 @@
       <div class="container" id="grid">
         <div class="row">
           <div class="col-md-3">
-            <img
-              src="img/kuva4.jpg"
-              alt="Koralliriutta"
-              class="d-block"
-              style="width: 100%"
-            />
+            <img id="kuva4" src="img/kuva4.jpg" alt="Koralliriutta" />
           </div>
           <div class="col-md-6">
             <h1>Sukelluskoulu X</h1>
@@ -182,10 +177,9 @@
           </div>
           <div class="col-md-3">
             <img
+              id="kuva5"
               src="img/kuva5.jpg"
               alt="Meritähti koralliriutalla"
-              class="d-block"
-              style="width: 100%"
             />
           </div>
         </div>
@@ -236,6 +230,157 @@
           </div>
         </div>
       </div>
+
+      <!-- Accordion -->
+      <div class="accordion" id="haitari">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#kurssi1"
+              aria-expanded="true"
+              aria-controls="kurssi1"
+            >
+              Sukelluksen peruskurssi
+            </button>
+          </h2>
+          <div
+            id="kurssi1"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#haitari"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#kurssi2"
+              aria-expanded="false"
+              aria-controls="kurssi2"
+            >
+              Sukelluksen jatkokurssi
+            </button>
+          </h2>
+          <div
+            id="kurssi2"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#haitari"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#kurssi3"
+              aria-expanded="false"
+              aria-controls="kurssi3"
+            >
+              Rikastetun ilman sukelluskurssi
+            </button>
+          </h2>
+          <div
+            id="kurssi3"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#haitari"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#kurssi4"
+              aria-expanded="false"
+              aria-controls="kurssi4"
+            >
+              Sukelluksen kertauskurssi
+            </button>
+          </h2>
+          <div
+            id="kurssi4"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#haitari"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video tabs -->
+      <div id="videot">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#video1">Käsimerkit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#video2">Laitteiden kokoaminen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#video3">Buddy check</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane container active" id="video1">video1</div>
+          <div class="tab-pane container fade" id="video2">video2</div>
+          <div class="tab-pane container fade" id="video3">video3</div>
+        </div>
+      </div>
+
+
 
       <!--lomake-->
       <div id="lomake" class="container-fluid">
