@@ -1,25 +1,33 @@
 :root {
   --textColor: white;
-  --headerColor: #2670a5;
   --emphasisColor: lightseagreen;
-  --darkEmphasis: #0a2768;
-  --backgroundColor: #78eefd;
-  --backgroundColor2: #01d3ff;
-  --backgroundColor3: #020236;
+  --darkEmphasis: #0a2869;
+  --backgroundColor: #01d3ff;
 }
 
 body {
   position: relative;
-  background-image: linear-gradient(white, var(--backgroundColor),var(--backgroundColor2), var(--darkEmphasis), var(--backgroundColor3));
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(
+    var(--backgroundColor),
+    var(--darkEmphasis)
+  );
+  background-attachment: fixed;
 }
 
 h1 {
-  color: var(--headerColor);
+  color: var(--emphasisColor);
   text-align: center;
 }
 
-div, form {
+div,
+form {
   color: var(--textColor);
+}
+
+#karuselli {
+  margin-top: 4rem;
 }
 
 /* Navigaatio */
@@ -45,7 +53,7 @@ div, form {
   color: var(--textColor) !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='lightseagreen' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 

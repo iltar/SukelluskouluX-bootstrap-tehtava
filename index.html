@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
-    <title>Bootstrap Example</title>
+    <title>Sukelluskoulu X</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -16,7 +16,13 @@
     <main id="alku" class="container">
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#alku"><img src="img/logo.png" alt="Logo" style="width:40px;">Sukelluskoulu X</a>
+          <a class="navbar-brand" href="#alku"
+            ><img
+              src="img/logo.png"
+              alt="Logo"
+              style="width: 40px"
+            />Sukelluskoulu X</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -42,10 +48,26 @@
                   >Kurssitarjonta</a
                 >
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sukelluksen alkeiskurssi</a></li>
-                  <li><a class="dropdown-item" href="#">Sukelluksen jatkokurssi</a></li>
-                  <li><a class="dropdown-item" href="#">Rikastetun ilman sukelluskurssi</a></li>
-                  <li><a class="dropdown-item" href="#">Sukelluksen kertauskurssi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Sukelluksen alkeiskurssi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Sukelluksen jatkokurssi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Rikastetun ilman sukelluskurssi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Sukelluksen kertauskurssi</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -60,100 +82,119 @@
       </nav>
 
       <!-- Carousel -->
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
+      <div id="karuselli">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/kuva1.jpg"
+                alt="Joukko sukeltajia silhuetteina meren pinnalta loistavaa aurinkoa vasten"
+                class="d-block"
+                style="width: 100%"
+              />
+              <div class="carousel-caption">
+                <h3>Koe merenalainen maailma</h3>
+                <p>Uppoudu vedenalaisten maailmojen kauneuteen</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/kuva2.jpg"
+                alt="Sukeltaja takaapäin kuvattuna oranssien kalojen ympäröimänä"
+                class="d-block"
+                style="width: 100%"
+              />
+              <div class="carousel-caption">
+                <h3>Suuntaa kohti seikkailua</h3>
+                <p>Löydä uusia kokemuksia meren syvyyksistä</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/kuva3.jpg"
+                alt="Kilpikonna ja vasarahai meressä, taustalla sukeltaja"
+                class="d-block"
+                style="width: 100%"
+              />
+              <div class="carousel-caption">
+                <h3>Kohtaa merten asukit</h3>
+                <p>Tutustu meren elämään niiden omalla kotiseudulla</p>
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls/icons -->
           <button
+            class="carousel-control-prev"
             type="button"
             data-bs-target="#demo"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
           <button
+            class="carousel-control-next"
             type="button"
             data-bs-target="#demo"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="2"
-          ></button>
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="img/kuva1.jpg"
-              alt="Joukko sukeltajia silhuetteina meren pinnalta loistavaa aurinkoa vasten"
-              class="d-block"
-              style="width: 100%"
-            />
-            <div class="carousel-caption">
-              <h3>Koe merenalainen maailma</h3>
-              <p>Uppoudu vedenalaisten maailmojen kauneuteen</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/kuva2.jpg"
-              alt="Sukeltaja takaapäin kuvattuna oranssien kalojen ympäröimänä"
-              class="d-block"
-              style="width: 100%"
-            />
-            <div class="carousel-caption">
-              <h3>Suuntaa kohti seikkailua</h3>
-              <p>Löydä uusia kokemuksia meren syvyyksistä</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/kuva3.jpg"
-              alt="Kilpikonna ja vasarahai meressä, taustalla sukeltaja"
-              class="d-block"
-              style="width: 100%"
-            />
-            <div class="carousel-caption">
-              <h3>Kohtaa merten asukit</h3>
-              <p>Tutustu meren elämään niiden omalla kotiseudulla</p>
-            </div>
-          </div>
-        </div>
-        <!-- Left and right controls/icons -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
 
       <!-- Grid -->
       <div class="container" id="grid">
         <div class="row">
-          <div class="col-md-3">1. palstan sisältö (kuva)</div>
+          <div class="col-md-3">
+            <img
+              src="img/kuva4.jpg"
+              alt="Koralliriutta"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
           <div class="col-md-6">
             <h1>Sukelluskoulu X</h1>
-            <p></p>
+            <p>
+              Tutustu sukeltamisen saloihin kursseillamme, tai koe mahtavat
+              matkakohteet sukellusmatkojemme kautta.
+            </p>
           </div>
-          <div class="col-md-3">3. palstan sisältö (kuva)</div>
+          <div class="col-md-3">
+            <img
+              src="img/kuva5.jpg"
+              alt="Meritähti koralliriutalla"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
         </div>
       </div>
 
       <!-- Cards -->
       <div class="container" id="kortit">
         <div class="row">
-          <div class="col">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Card title</h4>
@@ -163,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Card title</h4>
@@ -173,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Card title</h4>
@@ -183,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Card title</h4>
