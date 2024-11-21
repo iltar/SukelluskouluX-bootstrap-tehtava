@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
   --textColor: white;
   --emphasisColor: lightseagreen;
@@ -20,14 +22,25 @@ body {
 h1 {
   color: var(--emphasisColor);
   text-align: center;
+  font-family: "DynaPuff" !important;
   -webkit-text-stroke: white 1px;
 }
 
-a, a:visited {
+h2 {
+  font-family: "Karla";
+  text-align: left;
+}
+
+h3 {
+  font-family: "DynaPuff";
+}
+
+a,
+a:visited {
   color: var(--emphasisColor) !important;
 }
 
-div{
+div {
   color: var(--textColor);
   text-align: center;
 }
@@ -39,27 +52,41 @@ div{
 #kuva5 {
   border-radius: 0 20%;
 }
+.card-img-top {
+  height: 100%;
+}
 
-#karuselli, #grid, #kortit, #haitari, #taulukko, #videot, #lomake {
+#karuselli,
+#grid,
+#kortit,
+#haitari,
+#taulukko,
+#videot,
+#lomake {
   margin-top: 4rem;
 }
 
 /* Navigaatiot */
-.navbar, .nav-link.active {
+.navbar,
+.nav-link.active {
   background-color: var(--darkEmphasis) !important;
+}
+
+.nav-item {
+  background-color: var(--darkEmphasis);
 }
 
 .navbar-brand,
 .navbar-text {
   color: var(--emphasisColor) !important;
+  font-family: "Karla" !important;
 }
 
 .navbar-nav .nav-link {
   color: var(--emphasisColor) !important;
 }
 
-.nav-item.active .nav-link,
-.nav-item:hover .nav-link {
+.nav-item.active .nav-link {
   color: var(--textColor) !important;
 }
 
@@ -76,14 +103,15 @@ div{
 }
 
 /* Kortit & haitari */
-.card-body, .accordion-body, .accordion-collapse collapse {
-  background-color: var(--lightBackground);
-  color: var(--darkEmphasis);
+.card-body,
+.accordion-body{
+  background-color: var(--lightBackground) !important;
+  color: var(--darkEmphasis) !important;
 }
 
-.accordion-collapse collapse show {
-  background-color: var(--darkEmphasis);
-  color: var(--emphasisColor);
+.accordion-button {
+  background-color: var(--darkEmphasis) !important;
+  color: var(--emphasisColor) !important;
 }
 
 /* Lomake */
