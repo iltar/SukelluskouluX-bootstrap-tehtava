@@ -1,19 +1,25 @@
 :root {
-  --textColor: #ffffff;
+  --textColor: white;
   --headerColor: #2670a5;
   --emphasisColor: lightseagreen;
-  --darkEmphasis: #252e3b;
-  --backgroundColor: #94d8ee;
+  --darkEmphasis: #0a2768;
+  --backgroundColor: #78eefd;
+  --backgroundColor2: #01d3ff;
+  --backgroundColor3: #020236;
 }
 
 body {
   position: relative;
-  background-color: var(--backgroundColor);
+  background-image: linear-gradient(white, var(--backgroundColor),var(--backgroundColor2), var(--darkEmphasis), var(--backgroundColor3));
 }
 
 h1 {
   color: var(--headerColor);
   text-align: center;
+}
+
+div, form {
+  color: var(--textColor);
 }
 
 /* Navigaatio */
