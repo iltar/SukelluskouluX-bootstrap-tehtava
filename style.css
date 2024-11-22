@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=DynaPuff:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
   --textColor: white;
-  --emphasisColor: lightseagreen;
+  --emphasisColor: rgb(32, 178, 170, 0.9);
   --darkEmphasis: #0a2869;
   --backgroundColor: #01d3ff;
   --lightBackground: #d7faf7;
@@ -47,10 +47,12 @@ div {
 
 #kuva4 {
   border-radius: 20% 0;
+  margin: auto;
 }
 
 #kuva5 {
   border-radius: 0 20%;
+  margin: auto;
 }
 .card-img-top {
   width: 100%;
@@ -60,9 +62,7 @@ div {
 #grid,
 #kortit,
 #haitari,
-#taulukko,
-#videot,
-#lomake {
+#videot {
   margin-top: 4rem;
 }
 
@@ -76,7 +76,12 @@ div {
   background-color: var(--darkEmphasis);
 }
 
-.navbar-brand,
+.navbar-brand {
+  color: var(--emphasisColor) !important;
+  font-family: "Bangers" !important;
+  font-size: 25px !important;
+}
+
 .navbar-text {
   color: var(--emphasisColor) !important;
   font-family: "Karla" !important;
@@ -104,7 +109,7 @@ div {
 
 /* Kortit & haitari */
 .card-body,
-.accordion-body{
+.accordion-body {
   background-color: var(--lightBackground) !important;
   color: var(--darkEmphasis) !important;
 }
@@ -114,7 +119,24 @@ div {
   color: var(--emphasisColor) !important;
 }
 
+/* Taulukko */
+#taulukko {
+  margin-top: 2rem;
+}
+
+.table,
+tr,
+th,
+td {
+  background: none !important;
+  color: var(--textColor) !important;
+}
+
 /* Lomake */
+#lomake {
+  margin: 4rem auto;
+}
+
 form {
   text-align: left;
 }
@@ -124,4 +146,11 @@ label.muoto {
   width: 6em;
   text-align: right;
   vertical-align: top;
+}
+
+#valikko,
+#nimi,
+#sposti,
+#viesti {
+  width: 50%;
 }

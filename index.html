@@ -165,17 +165,17 @@
       <!-- Grid -->
       <div class="container" id="grid">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <img id="kuva4" src="img/kuva4.jpg" alt="Koralliriutta" />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <h1>Sukelluskoulu X</h1>
             <p>
               Tutustu sukeltamisen saloihin kursseillamme, tai koe mahtavat
               matkakohteet sukellusmatkojemme kautta.
             </p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <img
               id="kuva5"
               src="img/kuva5.jpg"
@@ -386,6 +386,39 @@
         </div>
       </div>
 
+      <!-- Table -->
+      <div id="taulukko">
+        <h2>Ohjaajat</h2>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Etunimi</th>
+                <th>Sukunimi</th>
+                <th>Sähköposti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Matti</td>
+                <td>Meikäläinen</td>
+                <td>mattimeika@example.com</td>
+              </tr>
+              <tr>
+                <td>Touko</td>
+                <td>Teikäläinen</td>
+                <td>teikalainen.touko@example.com</td>
+              </tr>
+              <tr>
+                <td>Maija</td>
+                <td>Meikäläinen</td>
+                <td>mmeikalainen@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- Video tabs -->
       <div id="videot">
         <h2>Sukelluksen perustaitoja</h2>
@@ -433,98 +466,127 @@
         </div>
       </div>
 
-      <!--lomake-->
-      <div id="lomake" class="container-fluid">
-        <form id="form" onsubmit="return false">
-          <label class="muoto" for="nimi">Nimi:</label>
-          <input
-            type="text"
-            id="nimi"
-            placeholder="nimi"
-            maxlength="50"
-            required
-          />
-          <br />
-          <label class="muoto" for="sposti">Sähköposti:</label>
-          <input type="email" id="sposti" placeholder="sähköposti" />
-          <br />
-          <label class="muoto" for="teksti">Viesti:</label>
-          <textarea
-            id="teksti"
-            rows="3"
-            cols="23"
-            maxlength="500"
-            placeholder="kirjoita tekstiä"
-          ></textarea>
-          <br />
-          <label for="yksivalinta">Valitse yksi</label>
-          <br />
-          <input
-            type="radio"
-            name="yksivalinta"
-            id="yksi1"
-            value="vaihtoehto 1"
-          />
-          <label for="yksi1">Vaihtoehto 1</label>
-          <br />
-          <input
-            type="radio"
-            name="yksivalinta"
-            id="yksi2"
-            value="vaihtoehto 2"
-          />
-          <label for="yksi2">Vaihtoehto 2</label>
-          <br />
-          <input
-            type="radio"
-            name="yksivalinta"
-            id="yksi3"
-            value="vaihtoehto 3"
-          />
-          <label for="yksi3">Vaihtoehto 3</label>
-          <br />
-          <label for="monivalinta">Valitse yksi tai useampi</label>
-          <br />
-          <input
-            type="checkbox"
-            name="monivalinta"
-            id="moni1"
-            value="vaihtoehto 1"
-          />
-          <label for="moni1">Vaihtoehto 1</label>
-          <br />
-          <input
-            type="checkbox"
-            name="monivalinta"
-            id="moni2"
-            value="vaihtoehto 2"
-          />
-          <label for="moni1">Vaihtoehto 2</label>
-          <br />
-          <input
-            type="checkbox"
-            name="monivalinta"
-            id="moni3"
-            value="vaihtoehto 3"
-          />
-          <label for="moni3">Vaihtoehto 3</label>
-          <br />
-          <label class="muoto" for="valikko">Valikko</label>
-          <select id="valikko">
-            <option value="Vaihtoehto 1">Vaihtoehto 1</option>
-            <option value="Vaihtoehto 2">Vaihtoehto 2</option>
-            <option value="Vaihtoehto 3">Vaihtoehto 3</option>
-          </select>
-          <br />
-          <label class="muoto" for="range">Valitse luku</label>
-          0
-          <input type="range" min="0" max="100" />
-          100
-          <br />
-          <input type="submit" onclick="tulostaLomake()" value="Lähetä" />
-          <input type="reset" value="Tyhjennä" />
-        </form>
-        <div id="vastaus"></div>
+      <!-- Form -->
+      <div id="lomake">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Ilmoittaudu</h2>
+            <p style="text-align: left">
+              Jätä meille viesti, jos olet kiinnostunut palveluistamme!
+              Järjestämme kursseja sekä matkoja kysynnän mukaan.
+            </p>
+            <form id="Ilmoittaudu" onsubmit="return false">
+              <label class="muoto" for="nimi">Nimi:</label>
+              <input
+                type="text"
+                id="nimi"
+                placeholder="Nimi"
+                maxlength="50"
+                required
+              />
+              <br />
+              <label class="muoto" for="sposti">Sähköposti:</label>
+              <input
+                type="email"
+                id="sposti"
+                placeholder="Sähköposti"
+                required
+              />
+              <br />
+              <label class="muoto" for="viesti">Viesti:</label>
+              <textarea
+                id="viesti"
+                rows="3"
+                cols="23"
+                maxlength="500"
+                placeholder="Vapaamuotoinen viesti"
+              ></textarea>
+              <br />
+              <label for="lahtotaso">Aikaisemmat suoritukset</label>
+              <br />
+              <input
+                type="checkbox"
+                name="lahtotaso"
+                id="perus"
+                value="Sukelluksen peruskurssi"
+              />
+              <label for="perus">Peruskurssi</label>
+              <br />
+              <input
+                type="checkbox"
+                name="lahtotaso"
+                id="jatko"
+                value="Sukelluksen jatkokurssi"
+              />
+              <label for="jatko">Jatkokurssi</label>
+              <br />
+              <input
+                type="checkbox"
+                name="lahtotaso"
+                id="nitrox"
+                value="Rikastetun ilman sukelluskurssi"
+              />
+              <label for="nitrox">Rikastetun ilman kurssi</label>
+              <br />
+              <label for="kurssiMatka">Haluan ilmoittautua...</label>
+              <br />
+              <input
+                type="radio"
+                name="kurssiMatka"
+                id="kurssi"
+                value="kurssille"
+                onclick="teeValikko('kurssi')"
+              />
+              <label for="kurssi">Kurssille</label>
+              <br />
+              <input
+                type="radio"
+                name="kurssiMatka"
+                id="matka"
+                value="matkalle"
+                onclick="teeValikko('matka')"
+              />
+              <label for="matka">Matkalle</label>
+              <br />
+              <label id="valikkoOtsikko" class="muoto" for="valikko"
+                >Valitse</label
+              >
+              <select id="valikko">
+                <option id="v1"></option>
+                <option id="v2"></option>
+                <option id="v3"></option>
+                <option id="v4"></option>
+              </select>
+              <br />
+              <label for="kuukausi">Sopivat ajankohdat</label>
+              <br />
+              <input
+                type="checkbox"
+                name="kuukausi"
+                id="kesa"
+                value="Kesäkuu"
+              />
+              <label for="kesa">Kesäkuu</label>
+              <br />
+              <input
+                type="checkbox"
+                name="kuukausi"
+                id="heina"
+                value="Heinäkuu"
+              />
+              <label for="heina">Heinäkuu</label>
+              <br />
+              <input type="checkbox" name="kuukausi" id="elo" value="Elokuu" />
+              <label for="elo">Elokuu</label>
+              <br />
+              <input type="submit" onclick="tulostaLomake()" value="Lähetä" />
+              <input type="reset" value="Tyhjennä" />
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div id="vastaus"></div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
