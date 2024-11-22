@@ -1,62 +1,58 @@
 function tulostaLomake() {
   let nimi = document.getElementById("nimi").value;
   let sposti = document.getElementById("sposti").value;
-  if (sposti == "") {
-    sposti = " -";
-  }
-  let viesti = document.getElementById("viesti").value;
-  if (viesti == "") {
-    viesti = " -";
-  }
-  let taso = document.getElementsByName("lahtotaso");
-  let valitutTasot = "<br>Lähtötaso:<br>";
-  for (let i = 0; i < taso.length; i++) {
-    if (taso[i].checked) {
-      valitutTasot += taso[i].value + "<br>";
+  if (nimi == "" || sposti == "") {
+  } else {
+    let viesti = document.getElementById("viesti").value;
+    let taso = document.getElementsByName("lahtotaso");
+    let valitutTasot = "<br>Lähtötaso:<br>";
+    for (let i = 0; i < taso.length; i++) {
+      if (taso[i].checked) {
+        valitutTasot += taso[i].value + "<br>";
+      }
     }
-  }
-  let muoto = document.getElementsByName("kurssiMatka");
-  let valittuMuoto = "";
-  for (let i = 0; i < muoto.length; i++) {
-    if (muoto[i].checked) {
-      valittuMuoto = muoto[i].value;
-      break;
+    let muoto = document.getElementsByName("kurssiMatka");
+    let valittuMuoto = "";
+    for (let i = 0; i < muoto.length; i++) {
+      if (muoto[i].checked) {
+        valittuMuoto = muoto[i].value;
+        break;
+      }
     }
-  }
 
-  let valinta = "<br>";
-  if (valittuMuoto == "kurssille") {
-    valinta += "Kurssivalinta: "
-  }
-  else if (valittuMuoto == "matkalle") {
-    valinta += "Kohdevalinta: "
-  }
-  let x = document.getElementById("valikko").selectedIndex;
-  let y = document.getElementById("valikko").options;
-  valinta += y[x].text;
-
-  let kuu = document.getElementsByName("kuukausi");
-  let valitutKuut = "<br>Sopivat ajankohdat:<br>";
-  for (let i = 0; i < kuu.length; i++) {
-    if (kuu[i].checked) {
-      valitutKuut += kuu[i].value + "<br>";
+    let valinta = "<br>";
+    if (valittuMuoto == "kurssille") {
+      valinta += "Kurssivalinta: ";
+    } else if (valittuMuoto == "matkalle") {
+      valinta += "Kohdevalinta: ";
     }
-  }
+    let x = document.getElementById("valikko").selectedIndex;
+    let y = document.getElementById("valikko").options;
+    valinta += y[x].text;
 
-  let vastaus =
-    "<h3>Kiitos ilmoittautimisesta!</h3>" +
-    "<p>Lähettämäsi viesti oli seuraava:<br><br>Nimi: " +
-    nimi +
-    "<br>Sähköposti: " +
-    sposti +
-    "<br>Viesti: " +
-    viesti +
-    valitutTasot +
-    "Haluan ilmoittautua: " +
-    valittuMuoto +
-    valinta +
-    valitutKuut;
-  document.getElementById("vastaus").innerHTML = vastaus;
+    let kuu = document.getElementsByName("kuukausi");
+    let valitutKuut = "<br>Sopivat ajankohdat:<br>";
+    for (let i = 0; i < kuu.length; i++) {
+      if (kuu[i].checked) {
+        valitutKuut += kuu[i].value + "<br>";
+      }
+    }
+
+    let vastaus =
+      "<h3>Kiitos ilmoittautimisesta!</h3>" +
+      "<p>Lähettämäsi viesti oli seuraava:<br><br>Nimi: " +
+      nimi +
+      "<br>Sähköposti: " +
+      sposti +
+      "<br>Viesti: " +
+      viesti +
+      valitutTasot +
+      "Haluan ilmoittautua: " +
+      valittuMuoto +
+      valinta +
+      valitutKuut;
+    document.getElementById("vastaus").innerHTML = vastaus;
+  }
 }
 
 function teeValikko(versio) {
